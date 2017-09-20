@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "",
+    "username": "dtb9r7qmb8wz403d",
+    "password": "o482440l8krumry7",
     "database": "gym_app_db",
-    "host": "127.0.0.1",
+    "host": "xq7t6tasopo9xxbs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/i1gmm9xhsbrshxly",
     "dialect": "mysql"
   }
 }
