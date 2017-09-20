@@ -1,0 +1,35 @@
+{
+  "name": "gym-application",
+  "version": "1.0.0",
+  "description": "Gym Application for rookies and experts",
+  "main": "server.js",
+  "scripts": {
+    "test": "Application Success",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garrettmmoore/gym-application.git"
+  },
+  "keywords": [
+    "Gym",
+    "Training"
+  ],
+  "author": "Garrett Moore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garrettmmoore/gym-application/issues"
+  },
+  "homepage": "https://github.com/garrettmmoore/gym-application#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "mysql2": "^1.4.2",
+    "sequelize": "^4.8.4"
+  },
+  "engines": {
+    "node": "8.1.4",
+    "npm": "5.4.0"
+  }
+}
