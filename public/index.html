@@ -10,10 +10,13 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
+
 <body class="index">
 	<div class="jumbotron index">
-	  <h1>Gym Buddy</h1>
-	  <a  href="index.html"><img src="assets/images/weight-logo.png" class="d-inline-block align-top" alt="GymBuds"/></a>
+		<h1>Gym Buddy</h1>
+		<a href="index.html">
+			<img src="assets/images/weight-logo.png" class="d-inline-block align-top" alt="GymBuds" />
+		</a>
 	</div>
 	<div class="container newUserOrLogin">
 		<div class="container loginInput">
@@ -21,21 +24,22 @@
 			<input class="form-control username" type="text">
 			<label class="loginLabel">Password</label>
 			<input class="form-control gymIdField" type="text">
-			<div class = "container rookieOrExpert">
-	    		<input type="radio" name="typeOfUser" id="rookie" > Rookie
-	    		<input type="radio" name="typeOfUser" id="expert" > Expert<br>
-	    	</div>
-    	</div>
-    	<div class="beginnerOrPro">
-    		<a class="btn btn-primary btn-lg rookieButton" href="rookie-form.html" role="button">Rookie</a>
-	  		<a class="btn btn-primary btn-lg expertButton" href="expert-form.html" role="button">Expert</a>
-	  	</div>
-    	<p><a class="btn btn-primary btn-lg newUserButton" role="button">New User</a>
-			  <button type="submit" id="submit" class="btn btn-primary btn-lg loginButton submit">Login</button>
-	  	</p>
-  	</div>
-
-
+			<div class="container rookieOrExpert">
+				<input type="radio" name="typeOfUser" id="rookie"> Rookie
+				<input type="radio" name="typeOfUser" id="expert"> Expert
+				<br>
+			</div>
+		</div>
+		<div class="beginnerOrPro">
+			<a class="btn btn-primary btn-lg rookieButton" href="rookie-form.html" role="button">Rookie</a>
+			<a class="btn btn-primary btn-lg expertButton" href="expert-form.html" role="button">Expert</a>
+		</div>
+		<p>
+			<a class="btn btn-primary btn-lg newUserButton" role="button">New User</a>
+			<button type="submit" id="submit" class="btn btn-primary btn-lg loginButton submit">Login</button>
+		</p>
+	</div>
 </body>
 <script src="js/buttons.js"></script>
+
 </html>

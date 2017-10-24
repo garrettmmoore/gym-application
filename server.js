@@ -18,7 +18,9 @@ var db = require("./models");
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(bodyParser.text());
 
 // Static directory
@@ -40,8 +42,8 @@ require("./routes/rookie-api-routes.js")(app);
 // 	callback = cb;
 // }
 
-db.sequelize.sync({ }).then(function() {
-  var server = app.listen(PORT, function() {
+db.sequelize.sync({}).then(function () {
+  var server = app.listen(PORT, function () {
     console.log("App listening on PORT %s" + PORT);
   });
   // callback(server);

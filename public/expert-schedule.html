@@ -1,25 +1,30 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <title>Expert Account</title>
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-        <meta charset="utf-8">
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">  
-        <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title">
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
-    </head>
-<body class= "user">
+
+<head>
+    <title>Expert Account</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body class="user">
     <div class="jumbotron jumbotron-fluid userAccount">
         <h1 class="display-1">Expert Account</h1>
-        <a  href="index.html"><img src="assets/images/weight-logo.png" class="d-inline-block align-top" alt="GymBuds"/></a>
+        <a href="index.html">
+            <img src="assets/images/weight-logo.png" class="d-inline-block align-top" alt="GymBuds" />
+        </a>
 
     </div>
-    <div class = "container main mapAndShedule">
-        <div class = "row">
-            <div class = "col-md-12 userWelcome">
+    <div class="container main mapAndShedule">
+        <div class="row">
+            <div class="col-md-12 userWelcome">
                 <h1 class="display-3">Pick a Rookie to Train:</h1>
                 <div class="row">
                     <div class="col-md-12 reservation-container">
@@ -27,8 +32,8 @@
                 </div>
             </div>
         </div>
-        <div class = "row">
-            <div class = "col-md-12">
+        <div class="row">
+            <div class="col-md-12">
                 <h1 class="display-3">Scheduled Appointments: </h1>
                 <div class="row">
                     <div class="col-md-12 myRes-container">
@@ -36,67 +41,70 @@
                 </div>
             </div>
         </div>
-        <div class = "row">
-            <div class = "col-md-12">
+        <div class="row">
+            <div class="col-md-12">
                 <h1 class="display-3">Choose A Gym Near You:</h1>
                 <div class="pac-card" id="pac-card">
-                        <div>
-                          <div id="title">
+                    <div>
+                        <div id="title">
                             Autocomplete search
-                          </div>
-                          <div id="type-selector" class="pac-controls">
+                        </div>
+                        <div id="type-selector" class="pac-controls">
                             <input type="radio" name="type" id="changetype-all" checked="checked">
                             <label for="changetype-all">Gyms</label>
 
-                          <input id="pac-input" type="text"
-                          placeholder="Enter a location">
+                            <input id="pac-input" type="text" placeholder="Enter a location">
                         </div>
-                        </div>
-                      </div>
-                      <div id="map"></div>
-                      <div id="infowindow-content">
-                        <img src="" width="16" height="16" id="place-icon">
-                        <span id="place-name"  class="title"></span><br>
-                        Gym ID: <span id="place-id"  class="title"></span><br>
-                        <span id="place-address"></span>
                     </div>
+                </div>
+                <div id="map"></div>
+                <div id="infowindow-content">
+                    <img src="" width="16" height="16" id="place-icon">
+                    <span id="place-name" class="title"></span>
+                    <br> Gym ID:
+                    <span id="place-id" class="title"></span>
+                    <br>
+                    <span id="place-address"></span>
+                </div>
             </div>
-        </div>  
-        <div class = "row">
-            <div class = "col-md-12">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <h1 class="display-3">Schedule A Workout</h1>
             </div>
         </div>
-        <form class = "expertScheduleForm">
+        <form class="expertScheduleForm">
             <div class="form-group">
-            <label><h2>User Name</h2></label>
-            <input class="form-control form-control-lg userNameField" type="text" placeholder="Username">
-            <div class="form-group">
-                <label for="gymId">Gym ID</label>
-                <input type="text" class="form-control gymField" id="gymId" placeholder="ChIJY9TAMwO7woARfm6h0NW_ycI">
-            </div>
-            <div class="form-group">
-                <label>Photo ID</label>
-                <input type="text" class="form-control photoField" id="photoId" placeholder="http://s2.dmcdn.net/I4ZTE/320x180-LqO.jpg">
-            </div>
-            <div class="form-group">
-                <label for="month">Month</label>
-                <select class="form-control monthField" id="month">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                </select>
-            </div>
-            <div class="form-group">
+                <label>
+                    <h2>User Name</h2>
+                </label>
+                <input class="form-control form-control-lg userNameField" type="text" placeholder="Username">
+                <div class="form-group">
+                    <label for="gymId">Gym ID</label>
+                    <input type="text" class="form-control gymField" id="gymId" placeholder="ChIJY9TAMwO7woARfm6h0NW_ycI">
+                </div>
+                <div class="form-group">
+                    <label>Photo ID</label>
+                    <input type="text" class="form-control photoField" id="photoId" placeholder="http://s2.dmcdn.net/I4ZTE/320x180-LqO.jpg">
+                </div>
+                <div class="form-group">
+                    <label for="month">Month</label>
+                    <select class="form-control monthField" id="month">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label for="day">Day</label>
                     <select class="form-control dayField" id="day">
                         <option>1</option>
@@ -155,13 +163,13 @@
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg submit" id="submit">Submit</button>
         </form>
-    </div>
-    <script src="js/expert/expert-apts.js"></script>
-    <script src="js/expert/expert-schedule-form.js"></script>
-    <script src="js/google-maps-api.js"></script>
-    <script src="js/expert/expert-get.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAgV0UI3EmyvGaJuo9EBkV2YVhKzHGUo4&libraries=places&callback=initMap"
-    async defer></script>
-
+        </div>
+        <script src="js/expert/expert-apts.js"></script>
+        <script src="js/expert/expert-schedule-form.js"></script>
+        <script src="js/google-maps-api.js"></script>
+        <script src="js/expert/expert-get.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAgV0UI3EmyvGaJuo9EBkV2YVhKzHGUo4&libraries=places&callback=initMap"
+            async defer></script>
 </body>
+
 </html>

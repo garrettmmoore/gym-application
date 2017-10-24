@@ -1,31 +1,26 @@
-$(document).ready(function(){
+$(document).ready(function () {
 	$(".loginInput").hide();
 	$(".beginnerOrPro").hide();
-	$(".loginButton").on("click", function(event){
+	$(".loginButton").on("click", function (event) {
 		$(".newUserButton").hide();
 		$(".loginInput").show();
 		$(".newUserOrLogin").addClass("login");
 		$(".login").removeClass("newUserOrLogin");
 		$(".loginButton").addClass("newLoginButton");
 		$(".newLoginButton").removeClass("loginButton");
-		start(event);  	
+		start(event);
 	});
-	
-	function start(event){
-		$(".newLoginButton").on("click", function(event){
+
+	function start(event) {
+		$(".newLoginButton").on("click", function (event) {
 			handleFormSubmit(event);
 		});
 	}
 
 	var userName = $(".username");
 	var gymIdField = $(".gymIdField");
-	
-	// var newLoginButton = $(".newLoginButton");
-	// $(newLoginButton).on("submit", handleFormSubmit);
 
-
-
-	function handleFormSubmit(event){
+	function handleFormSubmit(event) {
 		console.log("Event" + event.userName);
 		event.preventDefault();
 
@@ -33,17 +28,16 @@ $(document).ready(function(){
 			userName: userName.val().trim(),
 			gym: gymIdField.val().trim()
 		}
-		
 
 		console.log(returningUser);
 		submitPost(returningUser);
 	}
 
-	function submitPost(post){
-		$(".newLoginButton").on("click", function(event) {
+	function submitPost(post) {
+		$(".newLoginButton").on("click", function (event) {
 			var expertRadio = document.getElementById("expert");
 			var rookieRadio = document.getElementById("rookie");
-			
+
 			if (rookieRadio.checked) {
 				console.log("rookie radio checked!");
 				window.location.href = "/rookie-schedule?rookie_id=" + post.userName + "&gym_id=" + post.gym;
@@ -60,9 +54,9 @@ $(document).ready(function(){
 	}
 })
 
-$(".newUserButton").on("click", function(event){
+$(".newUserButton").on("click", function (event) {
 	event.preventDefault();
-   	$(".newUserButton").hide();
-   	$(".loginButton").hide();
-   	$(".beginnerOrPro").show();
+	$(".newUserButton").hide();
+	$(".loginButton").hide();
+	$(".beginnerOrPro").show();
 });

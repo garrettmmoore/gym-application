@@ -1,10 +1,10 @@
 // Requiring our models
 var db = require("../models");
 
-module.exports = function(app) {
+module.exports = function (app) {
 
   // POST route for adding new Rookie to the rookie table
-  app.post("/rookie", function(req, res) {
+  app.post("/rookie", function (req, res) {
     db.Rookie.create({
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -12,7 +12,7 @@ module.exports = function(app) {
       photo: req.body.photo,
       userType: req.body.userType,
       gym: req.body.gym
-    }).then(function(results) {
+    }).then(function (results) {
       res.json(results);
     })
   });
